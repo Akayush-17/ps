@@ -76,7 +76,7 @@ def upload(request):
         new_post = Post.objects.create(user=user, image=image, caption=caption)
         new_post.save()
 
-        return redirect('/')
+        return redirect('/profile/'+user)
     else:
         return redirect('/')
 
