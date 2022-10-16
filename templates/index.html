@@ -281,9 +281,7 @@
                                 <p>
                                     <a href="/profile/{{post.user}}"><strong>{{post.user}}</strong></a> {{post.caption}}
                                 </p>
-                                <p>
-                                    <a href="/profile/{{post.user}}"></a> {{user.comment1}}
-                                </p>
+                               
 
                                 <!-- <div class="border-t pt-4 space-y-4 ">
                                     <div class="flex">
@@ -307,7 +305,7 @@
                                         </div>
                                     </div>
                                 </div> -->
-                              <form action="comment" method="POST" >
+                              {% comment %} <form action="comment" method="POST" >
                                     {% csrf_token %}
                                 <div class="bg-gray-100 bg-gray-100 rounded-full rounded-md relative ">
                                     <input type="text"  name="comment" placeholder="post a comment" class="bg-transparent max-h-10 shadow-none">
@@ -318,7 +316,7 @@
                                         
                                     </div>
                                 </div> 
-                             </form>
+                             </form> {% endcomment %}
     
                             </div>
     

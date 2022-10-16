@@ -55,18 +55,18 @@
                                 value = ""
                                 class="shadow-none bg-gray-100">
                             </div>
-                           <div>
+                            <div>
                                <label for=""> First name</label>
-                               <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
+                               <input type="text" placeholder="" name="fname" class="shadow-none bg-gray-100" value="{{user_profile.fname}}">
                            </div>
                            <div>
                                <label for=""> Last name</label>
-                               <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
+                               <input type="text" placeholder="" name="lname" class="shadow-none bg-gray-100" value="{{user_profile.lname}}">
                             </div>
                             <div class="col-span-2">
                                 <label for=""> Email</label>
-                                <input type="text" placeholder="Your name.." class="shadow-none bg-gray-100">
-                            </div>
+                                <input type="text" placeholder="" name='email' value="{{user_profile.email}}" class="shadow-none bg-gray-100">
+                            </div> 
                             <div class="col-span-2">
                                 <label for="about">Bio</label>  
                                 <textarea id="about" 

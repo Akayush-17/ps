@@ -189,18 +189,27 @@ def settings(request):
             image = user_profile.profileimg
             bio = request.POST['bio']
             location = request.POST['location']
+            fname=request.POST['fname']
+            lname=request.POST['lname']
+            email=request.POST['email']
+
 
             user_profile.profileimg = image
+            user_profile.fname =fname
+            user_profile.lname =lname
+            user_profile.email =email
             user_profile.bio = bio
             user_profile.location = location
             user_profile.save()
         if request.FILES.get('image') != None:
+            fname=request.POST['fname']
             image = request.FILES.get('image')
             bio = request.POST['bio']
             location = request.POST['location']
 
             user_profile.profileimg = image
             user_profile.bio = bio
+            user_profile.fname =fname
             user_profile.location = location
             user_profile.save()
 
